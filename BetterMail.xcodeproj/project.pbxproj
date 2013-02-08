@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD1B5E574344CAD9DC2715E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CECC3AF5DE468395B7ACE7 /* libPods.a */; };
 		9E1D157F16C54E3500A6ED23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D157E16C54E3500A6ED23 /* UIKit.framework */; };
 		9E1D158116C54E3500A6ED23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D158016C54E3500A6ED23 /* Foundation.framework */; };
 		9E1D158316C54E3500A6ED23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D158216C54E3500A6ED23 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 		9E1D159816C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159616C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard */; };
 		9E1D159B16C54E3500A6ED23 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159916C54E3500A6ED23 /* MainStoryboard_iPad.storyboard */; };
 		9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D159D16C54E3500A6ED23 /* BMViewController.m */; };
+		9E1D15A516C550AA00A6ED23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D15A416C550AA00A6ED23 /* CoreData.framework */; };
+		9E1D15A916C5517500A6ED23 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,10 @@
 		9E1D159A16C54E3500A6ED23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9E1D159C16C54E3500A6ED23 /* BMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMViewController.h; sourceTree = "<group>"; };
 		9E1D159D16C54E3500A6ED23 /* BMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMViewController.m; sourceTree = "<group>"; };
+		9E1D15A416C550AA00A6ED23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C4CECC3AF5DE468395B7ACE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +53,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1D15A516C550AA00A6ED23 /* CoreData.framework in Frameworks */,
 				9E1D157F16C54E3500A6ED23 /* UIKit.framework in Frameworks */,
 				9E1D158116C54E3500A6ED23 /* Foundation.framework in Frameworks */,
 				9E1D158316C54E3500A6ED23 /* CoreGraphics.framework in Frameworks */,
+				2CD1B5E574344CAD9DC2715E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 				9E1D158416C54E3500A6ED23 /* BetterMail */,
 				9E1D157D16C54E3500A6ED23 /* Frameworks */,
 				9E1D157C16C54E3500A6ED23 /* Products */,
+				F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +85,11 @@
 		9E1D157D16C54E3500A6ED23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E1D15A416C550AA00A6ED23 /* CoreData.framework */,
 				9E1D157E16C54E3500A6ED23 /* UIKit.framework */,
 				9E1D158016C54E3500A6ED23 /* Foundation.framework */,
 				9E1D158216C54E3500A6ED23 /* CoreGraphics.framework */,
+				C4CECC3AF5DE468395B7ACE7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +97,7 @@
 		9E1D158416C54E3500A6ED23 /* BetterMail */ = {
 			isa = PBXGroup;
 			children = (
+				9E1D15A616C550BB00A6ED23 /* DataModel */,
 				9E1D158D16C54E3500A6ED23 /* BMAppDelegate.h */,
 				9E1D158E16C54E3500A6ED23 /* BMAppDelegate.m */,
 				9E1D159616C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard */,
@@ -110,6 +123,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9E1D15A616C550BB00A6ED23 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +141,7 @@
 				9E1D157716C54E3500A6ED23 /* Sources */,
 				9E1D157816C54E3500A6ED23 /* Frameworks */,
 				9E1D157916C54E3500A6ED23 /* Resources */,
+				3B37CD38A3264068A9FFCB96 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +195,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B37CD38A3264068A9FFCB96 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E1D157716C54E3500A6ED23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +220,7 @@
 				9E1D158B16C54E3500A6ED23 /* main.m in Sources */,
 				9E1D158F16C54E3500A6ED23 /* BMAppDelegate.m in Sources */,
 				9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */,
+				9E1D15A916C5517500A6ED23 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +279,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -264,7 +304,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -274,6 +314,7 @@
 		};
 		9E1D15A216C54E3500A6ED23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BetterMail/BetterMail-Prefix.pch";
@@ -285,6 +326,7 @@
 		};
 		9E1D15A316C54E3500A6ED23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BetterMail/BetterMail-Prefix.pch";
@@ -313,8 +355,22 @@
 				9E1D15A316C54E3500A6ED23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9E1D157316C54E3500A6ED23 /* Project object */;
 }

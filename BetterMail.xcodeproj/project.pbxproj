@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E1D157F16C54E3500A6ED23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D157E16C54E3500A6ED23 /* UIKit.framework */; };
+		9E1D158116C54E3500A6ED23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D158016C54E3500A6ED23 /* Foundation.framework */; };
+		9E1D158316C54E3500A6ED23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D158216C54E3500A6ED23 /* CoreGraphics.framework */; };
+		9E1D158916C54E3500A6ED23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D158716C54E3500A6ED23 /* InfoPlist.strings */; };
+		9E1D158B16C54E3500A6ED23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D158A16C54E3500A6ED23 /* main.m */; };
+		9E1D158F16C54E3500A6ED23 /* BMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D158E16C54E3500A6ED23 /* BMAppDelegate.m */; };
+		9E1D159116C54E3500A6ED23 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159016C54E3500A6ED23 /* Default.png */; };
+		9E1D159316C54E3500A6ED23 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159216C54E3500A6ED23 /* Default@2x.png */; };
+		9E1D159516C54E3500A6ED23 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159416C54E3500A6ED23 /* Default-568h@2x.png */; };
+		9E1D159816C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159616C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard */; };
+		9E1D159B16C54E3500A6ED23 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D159916C54E3500A6ED23 /* MainStoryboard_iPad.storyboard */; };
+		9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D159D16C54E3500A6ED23 /* BMViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E1D157B16C54E3500A6ED23 /* BetterMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1D157E16C54E3500A6ED23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E1D158016C54E3500A6ED23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E1D158216C54E3500A6ED23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E1D158616C54E3500A6ED23 /* BetterMail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BetterMail-Info.plist"; sourceTree = "<group>"; };
+		9E1D158816C54E3500A6ED23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E1D158A16C54E3500A6ED23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E1D158C16C54E3500A6ED23 /* BetterMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BetterMail-Prefix.pch"; sourceTree = "<group>"; };
+		9E1D158D16C54E3500A6ED23 /* BMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAppDelegate.h; sourceTree = "<group>"; };
+		9E1D158E16C54E3500A6ED23 /* BMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAppDelegate.m; sourceTree = "<group>"; };
+		9E1D159016C54E3500A6ED23 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E1D159216C54E3500A6ED23 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9E1D159416C54E3500A6ED23 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9E1D159716C54E3500A6ED23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9E1D159A16C54E3500A6ED23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9E1D159C16C54E3500A6ED23 /* BMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMViewController.h; sourceTree = "<group>"; };
+		9E1D159D16C54E3500A6ED23 /* BMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E1D157816C54E3500A6ED23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1D157F16C54E3500A6ED23 /* UIKit.framework in Frameworks */,
+				9E1D158116C54E3500A6ED23 /* Foundation.framework in Frameworks */,
+				9E1D158316C54E3500A6ED23 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E1D157216C54E3500A6ED23 = {
+			isa = PBXGroup;
+			children = (
+				9E1D158416C54E3500A6ED23 /* BetterMail */,
+				9E1D157D16C54E3500A6ED23 /* Frameworks */,
+				9E1D157C16C54E3500A6ED23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E1D157C16C54E3500A6ED23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D157B16C54E3500A6ED23 /* BetterMail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E1D157D16C54E3500A6ED23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D157E16C54E3500A6ED23 /* UIKit.framework */,
+				9E1D158016C54E3500A6ED23 /* Foundation.framework */,
+				9E1D158216C54E3500A6ED23 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E1D158416C54E3500A6ED23 /* BetterMail */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D158D16C54E3500A6ED23 /* BMAppDelegate.h */,
+				9E1D158E16C54E3500A6ED23 /* BMAppDelegate.m */,
+				9E1D159616C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard */,
+				9E1D159916C54E3500A6ED23 /* MainStoryboard_iPad.storyboard */,
+				9E1D159C16C54E3500A6ED23 /* BMViewController.h */,
+				9E1D159D16C54E3500A6ED23 /* BMViewController.m */,
+				9E1D158516C54E3500A6ED23 /* Supporting Files */,
+			);
+			path = BetterMail;
+			sourceTree = "<group>";
+		};
+		9E1D158516C54E3500A6ED23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D158616C54E3500A6ED23 /* BetterMail-Info.plist */,
+				9E1D158716C54E3500A6ED23 /* InfoPlist.strings */,
+				9E1D158A16C54E3500A6ED23 /* main.m */,
+				9E1D158C16C54E3500A6ED23 /* BetterMail-Prefix.pch */,
+				9E1D159016C54E3500A6ED23 /* Default.png */,
+				9E1D159216C54E3500A6ED23 /* Default@2x.png */,
+				9E1D159416C54E3500A6ED23 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E1D157A16C54E3500A6ED23 /* BetterMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E1D15A116C54E3500A6ED23 /* Build configuration list for PBXNativeTarget "BetterMail" */;
+			buildPhases = (
+				9E1D157716C54E3500A6ED23 /* Sources */,
+				9E1D157816C54E3500A6ED23 /* Frameworks */,
+				9E1D157916C54E3500A6ED23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterMail;
+			productName = BetterMail;
+			productReference = 9E1D157B16C54E3500A6ED23 /* BetterMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E1D157316C54E3500A6ED23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MobileMinds;
+			};
+			buildConfigurationList = 9E1D157616C54E3500A6ED23 /* Build configuration list for PBXProject "BetterMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E1D157216C54E3500A6ED23;
+			productRefGroup = 9E1D157C16C54E3500A6ED23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E1D157A16C54E3500A6ED23 /* BetterMail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E1D157916C54E3500A6ED23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1D158916C54E3500A6ED23 /* InfoPlist.strings in Resources */,
+				9E1D159116C54E3500A6ED23 /* Default.png in Resources */,
+				9E1D159316C54E3500A6ED23 /* Default@2x.png in Resources */,
+				9E1D159516C54E3500A6ED23 /* Default-568h@2x.png in Resources */,
+				9E1D159816C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard in Resources */,
+				9E1D159B16C54E3500A6ED23 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E1D157716C54E3500A6ED23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1D158B16C54E3500A6ED23 /* main.m in Sources */,
+				9E1D158F16C54E3500A6ED23 /* BMAppDelegate.m in Sources */,
+				9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E1D158716C54E3500A6ED23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E1D158816C54E3500A6ED23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E1D159616C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E1D159716C54E3500A6ED23 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9E1D159916C54E3500A6ED23 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E1D159A16C54E3500A6ED23 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E1D159F16C54E3500A6ED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E1D15A016C54E3500A6ED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1D15A216C54E3500A6ED23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterMail/BetterMail-Prefix.pch";
+				INFOPLIST_FILE = "BetterMail/BetterMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E1D15A316C54E3500A6ED23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BetterMail/BetterMail-Prefix.pch";
+				INFOPLIST_FILE = "BetterMail/BetterMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E1D157616C54E3500A6ED23 /* Build configuration list for PBXProject "BetterMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1D159F16C54E3500A6ED23 /* Debug */,
+				9E1D15A016C54E3500A6ED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E1D15A116C54E3500A6ED23 /* Build configuration list for PBXNativeTarget "BetterMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1D15A216C54E3500A6ED23 /* Debug */,
+				9E1D15A316C54E3500A6ED23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E1D157316C54E3500A6ED23 /* Project object */;
+}

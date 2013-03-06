@@ -1,3 +1,6 @@
-platform :ios
+platform :ios, '5.1'
 pod 'iCarousel'
-
+pod 'MBProgressHUD'
+pod 'AFNetworking'
+pod 'CocoaLumberjack'
+pod 'InAppSettingsKit'

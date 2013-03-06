@@ -22,6 +22,12 @@
 		9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D159D16C54E3500A6ED23 /* BMViewController.m */; };
 		9E1D15A516C550AA00A6ED23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1D15A416C550AA00A6ED23 /* CoreData.framework */; };
 		9E1D15A916C5517500A6ED23 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */; };
+		9E1D15B216C560B600A6ED23 /* _Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15AB16C560B600A6ED23 /* _Contact.m */; };
+		9E1D15B316C560B600A6ED23 /* _Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15AD16C560B600A6ED23 /* _Email.m */; };
+		9E1D15B416C560B600A6ED23 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15AF16C560B600A6ED23 /* Contact.m */; };
+		9E1D15B516C560B600A6ED23 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15B116C560B600A6ED23 /* Email.m */; };
+		9E1D15B816C5612500A6ED23 /* BMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D15B716C5612400A6ED23 /* BMDataModel.m */; };
+		9ED59C5316D5329E00EC3611 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9ED59C5216D5329E00EC3611 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,18 @@
 		9E1D159D16C54E3500A6ED23 /* BMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMViewController.m; sourceTree = "<group>"; };
 		9E1D15A416C550AA00A6ED23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9E1D15AA16C560B600A6ED23 /* _Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Contact.h; sourceTree = "<group>"; };
+		9E1D15AB16C560B600A6ED23 /* _Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Contact.m; sourceTree = "<group>"; };
+		9E1D15AC16C560B600A6ED23 /* _Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Email.h; sourceTree = "<group>"; };
+		9E1D15AD16C560B600A6ED23 /* _Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Email.m; sourceTree = "<group>"; };
+		9E1D15AE16C560B600A6ED23 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		9E1D15AF16C560B600A6ED23 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		9E1D15B016C560B600A6ED23 /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		9E1D15B116C560B600A6ED23 /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		9E1D15B616C5612400A6ED23 /* BMDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDataModel.h; sourceTree = "<group>"; };
+		9E1D15B716C5612400A6ED23 /* BMDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDataModel.m; sourceTree = "<group>"; };
+		9E888F7416D37FD10015F596 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		9ED59C5216D5329E00EC3611 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C4CECC3AF5DE468395B7ACE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -70,6 +88,7 @@
 				9E1D158416C54E3500A6ED23 /* BetterMail */,
 				9E1D157D16C54E3500A6ED23 /* Frameworks */,
 				9E1D157C16C54E3500A6ED23 /* Products */,
+				9ED59C5216D5329E00EC3611 /* Settings.bundle */,
 				F4644C0FCB6C4B2496CA6864 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -126,7 +145,17 @@
 		9E1D15A616C550BB00A6ED23 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E1D15AA16C560B600A6ED23 /* _Contact.h */,
+				9E1D15AB16C560B600A6ED23 /* _Contact.m */,
+				9E1D15AC16C560B600A6ED23 /* _Email.h */,
+				9E1D15AD16C560B600A6ED23 /* _Email.m */,
+				9E1D15AE16C560B600A6ED23 /* Contact.h */,
+				9E1D15AF16C560B600A6ED23 /* Contact.m */,
+				9E1D15B016C560B600A6ED23 /* Email.h */,
+				9E1D15B116C560B600A6ED23 /* Email.m */,
 				9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */,
+				9E1D15B616C5612400A6ED23 /* BMDataModel.h */,
+				9E1D15B716C5612400A6ED23 /* BMDataModel.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -142,6 +171,7 @@
 				9E1D157816C54E3500A6ED23 /* Frameworks */,
 				9E1D157916C54E3500A6ED23 /* Resources */,
 				3B37CD38A3264068A9FFCB96 /* Copy Pods Resources */,
+				9E888F7516D3806A0015F596 /* Run Mogenerator */,
 			);
 			buildRules = (
 			);
@@ -190,6 +220,7 @@
 				9E1D159516C54E3500A6ED23 /* Default-568h@2x.png in Resources */,
 				9E1D159816C54E3500A6ED23 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9E1D159B16C54E3500A6ED23 /* MainStoryboard_iPad.storyboard in Resources */,
+				9ED59C5316D5329E00EC3611 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +241,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		9E888F7516D3806A0015F596 /* Run Mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Mogenerator";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MODELS_DIR=\"BetterMail/DataModel\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/Model.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\n/usr/local/bin/mogenerator --template-var arc=true --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --output-dir \"$MODELS_DIR/\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,6 +266,11 @@
 				9E1D158F16C54E3500A6ED23 /* BMAppDelegate.m in Sources */,
 				9E1D159E16C54E3500A6ED23 /* BMViewController.m in Sources */,
 				9E1D15A916C5517500A6ED23 /* Model.xcdatamodeld in Sources */,
+				9E1D15B216C560B600A6ED23 /* _Contact.m in Sources */,
+				9E1D15B316C560B600A6ED23 /* _Email.m in Sources */,
+				9E1D15B416C560B600A6ED23 /* Contact.m in Sources */,
+				9E1D15B516C560B600A6ED23 /* Email.m in Sources */,
+				9E1D15B816C5612500A6ED23 /* BMDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +413,10 @@
 		9E1D15A716C5517500A6ED23 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				9E888F7416D37FD10015F596 /* Model 2.xcdatamodel */,
 				9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */,
 			);
-			currentVersion = 9E1D15A816C5517500A6ED23 /* Model.xcdatamodel */;
+			currentVersion = 9E888F7416D37FD10015F596 /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

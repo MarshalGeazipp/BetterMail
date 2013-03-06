@@ -7,15 +7,71 @@
 //
 
 #import "BMAppDelegate.h"
+#import "BMDataModel.h"
+#import "Email.h"
+#import "Contact.h"
+
 
 @implementation BMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  [self setupLogging];
+  
+  NSManagedObjectContext *context = [[BMDataModel sharedDataModel] mainContext];
+  if (context) {
+    NSLog(@"context ready");
+    
+    Contact *c = [Contact insertInManagedObjectContext:context];
+    c.name = @"Hans Dampf2";
+    c.emailAddress = @"ha.da2@da.de";
+    
+    Email *email = [Email insertInManagedObjectContext:context];
+    email.recipient = c;
+    email.sender = @"me";
+    email.body = @"test text mail";
+    
+    
+    NSError *err = nil;
+    [context save:&err];
+    
+    if (err) {
+      DDLogError(@"Uppss!");
+    }
+    
+  }else {
+    DDLogError(@"context nil!");
+  }
+  
+  DDLogInfo(@"BMDataModel: log level %d", [DDLog logLevelForClassWithName:@"BMDataModel"]);
+  DDLogInfo(@"BMAppDelegate: log level %d", [DDLog logLevelForClassWithName:@"BMAppDelegate"]);
+  
+ 
+#if !TARGET_IPHONE_SIMULATOR
+  for (Class class in [DDLog registeredClasses]) { // [DDLog registeredClasses] crashes in the simulator!!
+    DDLogInfo(@"%@", [class description]);
+    [DDLog logLevelForClass:class];
+    if ([class.description isEqualToString:@"BMDataModel"]) {
+      [DDLog setLogLevel:LOG_LEVEL_WARN forClass:class];
+    }
+  }
+
+  DDLogInfo(@"BMDataModel: log level %d", [DDLog logLevelForClassWithName:@"BMDataModel"]);
+  DDLogInfo(@"BMAppDelegate: log level %d", [DDLog logLevelForClassWithName:@"BMAppDelegate"]);
+#endif
+  
+  return YES;
 }
-							
+
+
+- (void)setupLogging
+{
+  ddLogLevel = LOG_LEVEL_VERBOSE;
+  [DDLog addLogger:[DDASLLogger sharedInstance]];
+  [DDLog addLogger:[DDTTYLogger sharedInstance]];
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -36,11 +92,22 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  DDLogInfo(@"app did become active!");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
++ (int)ddLogLevel
+{
+  return ddLogLevel;
+}
+
++ (void)ddSetLogLevel:(int)logLevel
+{
+  ddLogLevel = logLevel;
 }
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IASKAppSettingsViewController.h"
 
-@interface BMViewController : UIViewController
+@interface BMViewController : UIViewController <IASKSettingsDelegate>
+
+@property (nonatomic, retain) IASKAppSettingsViewController *appSettingsViewController;
+
+- (IBAction)buttonTapped:(id)sender;
+- (IBAction)settingsButtontapped:(id)sender;
 
 @end

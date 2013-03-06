@@ -1,11 +1,23 @@
 
 PODS:
+- AFNetworking (1.1.0)
+- CocoaLumberjack (1.6)
+- InAppSettingsKit (1.0)
+- MBProgressHUD (0.5)
 - iCarousel (1.7.4)
 
 DEPENDENCIES:
+- AFNetworking
+- CocoaLumberjack
+- InAppSettingsKit
+- MBProgressHUD
 - iCarousel
 
 SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
+  InAppSettingsKit: 8d5ae557a5890ca48c6e2085d6301194e4e2b48a
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
   iCarousel: 7f260b9f829005bb32d72ad19376a2a32ae3e418
 
 COCOAPODS: 0.16.2

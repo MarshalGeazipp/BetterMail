@@ -11,12 +11,18 @@
 #import "Email.h"
 #import "Contact.h"
 
+#import "PDDebugger.h"
+
 
 @implementation BMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [self setupLogging];
+  
+#if DEBUG
+  [self setupPonyDebugger];
+#endif
   
   NSManagedObjectContext *context = [[BMDataModel sharedDataModel] mainContext];
   if (context) {
@@ -108,6 +114,21 @@
 + (void)ddSetLogLevel:(int)logLevel
 {
   ddLogLevel = logLevel;
+}
+
+
+- (void)setupPonyDebugger
+{
+  PDDebugger *debugger = [PDDebugger defaultInstance];
+  [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
+  [debugger enableNetworkTrafficDebugging];
+  [debugger forwardAllNetworkTraffic];
+  
+  [debugger enableCoreDataDebugging];
+  NSManagedObjectContext *context = [[BMDataModel sharedDataModel] mainContext];
+  [debugger addManagedObjectContext:context withName:@"Main Context"];
+  
+  [debugger enableViewHierarchyDebugging];
 }
 
 @end

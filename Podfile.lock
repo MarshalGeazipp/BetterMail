@@ -7,6 +7,7 @@ PODS:
 - PonyDebugger (0.2.1beta1):
   - SocketRocket
 - SocketRocket (0.2.0)
+- Toast (2.0)
 - iCarousel (1.7.4)
 
 DEPENDENCIES:
@@ -15,7 +16,12 @@ DEPENDENCIES:
 - InAppSettingsKit
 - MBProgressHUD
 - PonyDebugger
+- Toast (from `https://github.com/orakzai/Toast.git')
 - iCarousel
+
+EXTERNAL SOURCES:
+  Toast:
+    :git: https://github.com/orakzai/Toast.git
 
 SPEC CHECKSUMS:
   AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
@@ -24,6 +30,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
   PonyDebugger: 6ca8e78566f917a24fc7e45f742de4b2d847afcf
   SocketRocket: a0529878e3c4c200196fa3a7e2ac1ef34aa33ffe
+  Toast: 05f46f9d48ddf6e29193f802b038e4fb41f806fa
   iCarousel: 7f260b9f829005bb32d72ad19376a2a32ae3e418
 
-COCOAPODS: 0.16.2
+COCOAPODS: 0.16.4

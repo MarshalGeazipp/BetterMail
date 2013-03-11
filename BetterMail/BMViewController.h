@@ -15,5 +15,6 @@
 
 - (IBAction)buttonTapped:(id)sender;
 - (IBAction)settingsButtontapped:(id)sender;
+- (IBAction)toastBtnTapped:(id)sender;
 
 @end

@@ -9,6 +9,7 @@
 #import "BMViewController.h"
 #import "iCarousel.h"
 #import "MBProgressHUD.h"
+#import "Toast+UIView.h"
 
 @interface BMViewController () {
   MBProgressHUD *_hud;
@@ -78,6 +79,17 @@
   [self presentModalViewController:aNavController animated:YES];
   
 }
+
+
+- (IBAction)toastBtnTapped:(id)sender
+{
+  // toast with duration, title, and position
+  [self.view makeToast:@"This is a piece of toast with a title."
+              duration:3.0
+              position:@"top"
+                 title:@"Toast Title"];
+}
+
 
 - (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender
 {
